@@ -1,0 +1,59 @@
+  _____   ____ _ 
+ / _ \ \ / / _` |
+|  __/\ V / (_| |
+ \___| \_/ \__,_|
+
+eva - Extensible Vehicular Automaton
+Copyright (C) 2014 AVBotz
+Version 2014-12
+
+INTRODUCTION
+
+  EVA is a modular mission control application for controlling AVBotz's
+  robotic submarine entered into the annual AUVSI Robosub competition.
+
+DEPENDENCIES
+
+  Most dependencies are included in the 3rdparty directory and automatically
+  compiled with eva. The exception is Video for Linux Two, which is included
+  in the Linux kernel.
+
+THIRD PARTY LIBRARIES
+
+  libconfig++ (LGPL Version 2.1)
+
+  OpenCV (BSD)
+
+  Video for Linux Two (GPL Version 2)
+
+  threadpool by iambald
+
+COPYING
+
+  See COPYING for more details.
+
+COMPILE
+
+  make all
+
+USAGE
+
+  ./eva config
+
+EXTRAS
+
+  simulator
+
+    Simulates the environment to test the mission control systems. Relies on
+    Blender, socat, and pyserial to emulate an mbed and the front and down
+    cameras. See sim_scripts/README.md for more details.
+
+  marvin - Manual Aquatic Robot Vehicle Interactive Navigator
+
+    Can be used to manually control the sub in place of eva. It is written in
+    Python and uses pyserial. See marvin.py for more details.
+
+  Ascii Art Generator
+
+    A simple bash script that uses figlet to generate ascii art for all
+    source files. See ascii_art.sh for more details.
